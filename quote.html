@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Matt's Mufflers</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Molengo|Amaranth' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="lib/smartmenus-1.0.0-beta1/css/sm-core-css.css">
+	<link rel="stylesheet" href="lib/smartmenus-1.0.0-beta1/css/sm-blue/sm-blue.css">
+	<!-- The line below is for jQuery CDN.  You can find the link at the google CNS jquery / Hosted Libraries.  -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="lib/smartmenus-1.0.0-beta1/jquery.smartmenus.min.js"></script>
+	<script src="lib/jquery.validate.min.js"></script>
+	<script src="js/site.js"></script>
+	<script src="js/quote.js"></script>
+		
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Matt's Mufflers</h1>
+			<h2>Specializing in everything between the engine and the tailpipe!</h2>
+		</div>
+		<div id="nav">
+			<ul id="main-menu" class="sm sm-vertical sm-blue">
+				<li><a href="welcome.html"><i class="fa fa-home"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+				<li><a href="quote.html"><i class="fa fa-pencil-square-o"></i> &nbsp;&nbsp;&nbsp;&nbsp;Get a Quote</a></li>
+				<li><a href="charts.html"><i class="fa fa-bar-chart"></i> &nbsp;&nbsp;&nbsp;Charts</a></li>
+				<li><a href="maps.html"><i class="fa fa-globe"></i> &nbsp;&nbsp;&nbsp;&nbsp;Locations</a></li>			
+				<li><a href="rss.html"><i class="fa fa-rss"></i> &nbsp;&nbsp;&nbsp;&nbsp;RSS Feed</a></li>
+			</ul>
+		</div>
+		<!-- <div class="clear"></div> -->
+		<div id="content">
+			<div id="text_buttons">
+				<button id="decrease"><i class="fa fa-minus-square-o fa-2x"></i></button>
+				<span id="text_size"><i class="fa fa-font"></i><i class="fa fa-font fa-2x"></i></span>
+				
+				<button id="increase"><i class="fa fa-plus-square-o fa-2x"></i></button>
+			</div>
+			<h2>Get a Quote </h2>
+			<p id="instruct">Please fill out the information on the form below to get started and one of Service Advisors will contact you for further information and to schedule your service.</p>
+			<form action="http://ctec.clark.edu/~belgort/formprocessing/processform.php" method="post" id="get_quote" name="get_quote">
+				<fieldset><legend>Contact Information</legend>
+					<p><label for="first_name">First Name: </label>
+					<input type="text" name="first_name" id="first_name"></p>
+					<p><label for="last_name">Last Name: </label>
+					<input type="text" name="last_name" id="last_name"></p>
+					<p><label for="address1">Address: </label>
+					<input type="text" name="address1" id="address1"></p>
+					<p><label for="address2">Address 2: </label>
+					<input type="text" name="address2" id="address2"></p>
+					<p><label for="city">City: </label>
+					<input type="text" name="city" id="city"></p>
+					<p><label for="state">State: </label>
+					<select name="state" id="state">
+						<option value="-">-Select a State</option>
+						<option value="WA">Washington</option>
+						<option value="OR">Oregon</option>
+						<option value="ID">Idaho</option>
+					</select></p>
+					<p><label for="zip">Zip Code: </label>
+					<input type="number" name="zip" id="zip"></p>
+					<p><label for="phone">Phone Number: </label>
+					<input type="tel" name="phone" id="phone"></p>
+					<p><label for="email">Email Address: </label>
+					<input type="email" name="email" id="email"></p>
+				</fieldset>
+				<fieldset><legend>Vehicle Information</legend>
+					<p><label for="make">Vehicle Make: </label>
+					<input type="text" name="make" id="make"></p>
+					<p><label for="model">Vehicle Model: </label>
+					<input type="text" name="model" id="model"></p>
+					<p><label for="year">Model Year: </label>
+					<input type="number" name="year" id="year"></p>
+				</fieldset>
+				<fieldset id="service_set"><legend>Servce Required</legend>
+					<input type="checkbox" name="service[]" class="service" id="exhaust">
+					<label for="exhaust">Exhaust </label>
+					<input type="checkbox" name="service[]" class="service" id="muffler">
+					<label for="muffler">Muffler</label>					
+					<input type="checkbox" name="service[]" class="service" id="brakes">
+					<label for="brakes">Brakes</label>
+					<input type="checkbox" name="service[]" class="service" id="emissions">			
+					<label for="emissions">Emissions</label>
+					<input type="checkbox" name="service[]" class="service" id="other">				
+					<label for="other" id="target">Other (please use notes)</label>
+				</fieldset>
+				<p><label for="notes">Notes:</label><br>
+				<textarea name="notes" id="notes" rows="10"></textarea></p>
+				<input type="submit" class="submit" value="Send Data">
+			</form>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

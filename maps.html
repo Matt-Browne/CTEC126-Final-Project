@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Matt's Mufflers</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Molengo|Amaranth' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="lib/smartmenus-1.0.0-beta1/css/sm-core-css.css">
+	<link rel="stylesheet" href="lib/smartmenus-1.0.0-beta1/css/sm-blue/sm-blue.css">
+	<!-- The line below is for jQuery CDN.  You can find the link at the google CNS jquery / Hosted Libraries.  -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="lib/smartmenus-1.0.0-beta1/jquery.smartmenus.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	<script type="text/javascript" src="lib/jquery.gomap-1.3.3.min.js"></script> 
+	<script src="js/site.js"></script>
+	<script src="js/maps.js"></script>
+		
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Matt's Mufflers</h1>
+			<h2>Specializing in everything between the engine and the tailpipe!</h2>
+		</div>
+		<div id="nav">
+			<ul id="main-menu" class="sm sm-vertical sm-blue">
+				<li><a href="welcome.html"><i class="fa fa-home"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+				<li><a href="quote.html"><i class="fa fa-pencil-square-o"></i> &nbsp;&nbsp;&nbsp;&nbsp;Get a Quote</a></li>
+				<li><a href="charts.html"><i class="fa fa-bar-chart"></i> &nbsp;&nbsp;&nbsp;Charts</a></li>
+				<li><a href="maps.html"><i class="fa fa-globe"></i> &nbsp;&nbsp;&nbsp;&nbsp;Locations</a></li>			
+				<li><a href="rss.html"><i class="fa fa-rss"></i> &nbsp;&nbsp;&nbsp;&nbsp;RSS Feed</a></li>
+			</ul>
+		</div>
+		<!-- <div class="clear"></div> -->
+		<div id="content">
+			<div id="text_buttons">
+				<button id="decrease"><i class="fa fa-minus-square-o fa-2x"></i></button>
+				<span id="text_size"><i class="fa fa-font"></i><i class="fa fa-font fa-2x"></i></span>
+				
+				<button id="increase"><i class="fa fa-plus-square-o fa-2x"></i></button>
+			</div>
+			<h2> Locations </h2>
+			<div id="map">
+				
+			</div>
+			<div id="locations">
+				<h3>Addresses</h3>
+				<div class="addresses">
+					<p><strong>Vancouver, WA:</strong></p>
+					1601 E Fourth Plain Blvd<br> 
+					Vancouver, WA 98661<br>
+					(360) 555-1212
+				</div>
+				<div class="addresses">
+					<p><strong>Hillsboro, OR:</strong></p>
+					3133 NE Shute Rd<br>
+					Hillsboro, OR 97124<br>
+					(503) 555-1313
+				</div>
+				<div class="addresses">
+					<p><strong>Longview, WA:</strong></p>
+					551 Oregon Way<br>
+					Longview, WA 98632<br>
+					(360) 555-1234
+				</div>
+				<div class="addresses">
+					<p><strong>Burien, WA:</strong></p>
+					15324 4th Ave SW<br>
+					Burien, WA 98166<br>
+					(206) 867-5309
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

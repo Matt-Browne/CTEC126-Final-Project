@@ -1,0 +1,219 @@
+
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 1em;
+background-color:#ffffff;
+color:#000000;
+margin:0;
+padding:0;
+}
+
+.clear {
+clear: both;
+}
+
+	/*==========HEADER==========*/
+
+#header {
+height: 30%;
+background-color: #736F6F;
+padding: 0% 3% 2% 5%;
+}
+
+h1 {
+font-family: 'Amaranth', sans-serif;
+font-size: 6em;
+width:68%;
+padding-bottom: 1%;
+display: inline-block;
+color: #203DBA;
+/* Rotate h1 */
+-ms-transform: rotate(345deg); /* IE 9 */
+-webkit-transform: rotate(345deg); /* Chrome, Safari, Opera */
+transform: rotate(345deg);
+}
+
+#header h2 {
+font-family: 'Amaranth', sans-serif;
+font-size: 2.5em;
+width:61%;
+margin-top: -4%;
+margin-left: 30%;
+color: #203DBA;
+}
+
+	/*==========NAV==========*/
+
+#nav {
+width: 15%;
+height:100%;
+padding: 1%;
+padding-bottom: 100%;
+background-color: #B9C5FC;
+float: left;
+}
+
+	/*==========CONTENT==========*/
+
+#content>h2 {
+font-size: 3em;
+padding: 1%;
+padding-left: 0%;
+margin-top: 3%;
+/*margin-bottom: 5%;*/
+font-family: 'Molengo', sans-serif;
+}
+
+#content {
+float: left;
+width: 79%;
+padding-left:3%;
+padding-bottom: 100%;
+margin: .5%;
+background-color: #ECE8E8;
+border-radius: 10px;
+}
+
+#text_buttons {
+	width:20%;
+	float: right;
+	margin-top: 4%;
+	padding: 1%;
+}
+
+	/*==========WELCOME==========*/
+		/*fancybox stuff here*/
+
+.image_container {
+	display: inline-block;
+	width:125px;
+	height: auto;
+	overflow: hidden;
+	margin:0 auto 10px;
+	border:1px solid #000;
+	padding: 1%;
+	border-radius: 10px;
+}
+
+#fb_container {
+	width: 60%;
+	border: 2px solid rgb(169,169,169);
+	padding: 2%;
+
+	/*margin: 0 auto;*/
+	/*text-align: center;*/
+}
+
+#greeting {
+	/*border: 1px solid rgb(169,169,169);*/
+	font-size: 1.5em;
+	/*padding: 3% 0;*/
+	margin-bottom: 3%;
+	width: 75%;
+}
+
+#fb_container h2 {
+	font-size: 2.25em;
+}
+
+	/*===========QUOTES=========*/
+#get_quote {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 65%;
+	padding: 1%;
+	font-size: 1.25em;
+}
+
+#get_quote fieldset {
+	margin: 2%;
+	padding: 2%;
+	border-radius: 5px; 
+}
+
+#get_quote textarea {
+	border-radius: 5px;
+	margin: 2%;
+	padding: 2%;
+	width: 92%;	
+}
+
+#get_quote input, #get_quote select {
+	border-radius: 5px;
+	font-size: 1.2em;
+	width: 50%;
+}
+
+#get_quote input[type="checkbox"] {
+	width: 15px;
+}
+
+#get_quote input[type="submit"] {
+	background-color: #203DBA;
+	color: white;
+	width: auto;
+	font-size: 1.25em;
+	margin: 2%;
+	padding: 2%;
+}
+
+#instruct {
+	width: 65%;
+	font-size: 1.25em;
+	margin-bottom: 7%;
+}
+
+.errors {
+	color: red;
+	font-style: italic;
+	font-size: 1em;
+}
+
+	/*==========CHARTS==========*/
+#container {
+	width: 85%;
+	margin-left: 3%;
+	margin-top: 3%;
+	width: 75%;
+}
+
+#disclaim {
+	/*font-size: 1.5em;*/
+	font-style: italic;
+	width: 73%;
+	margin-top: 6%;
+}
+
+	/*==========MAPS=========*/
+
+#map {
+	width:760px;
+	height:400px;
+	margin:0 auto;
+	border:5px solid #cccccc;
+}
+
+#locations {
+	margin-top: 7%;
+}
+
+#locations h3{
+	margin-top:3%;
+	margin-bottom: 2%;
+	text-decoration: underline;
+}   		
+
+	/*==========RSS=========*/
+.rssHeader {
+	font-size: 1.25em;
+	height:auto;
+}
+
+li.rssRow {
+	height:auto;
+}
+
+.rssBody {
+	padding: 1%;
+	border: 2px groove rgb(169,169,169);
+}
